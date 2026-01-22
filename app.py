@@ -8,7 +8,7 @@ data = {
 
 @app.route("/get", methods=["GET"])
 def get_data():
-    return jsonify(data)
+    return ",".join(data["codes"])
 
 @app.route("/remove", methods=["POST"])
 def remove_item():
