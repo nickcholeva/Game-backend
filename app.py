@@ -26,9 +26,9 @@ data = {
         "8472039516"
     ]
 }
-@app.route("/get", methods=["GET"])
-def get_data():
-    return jsonify(data)
+@app.get("/get")
+def get_codes():
+    return "\n".join(data["codes"])
 
 @app.route("/remove", methods=["POST"])
 def remove_item():
