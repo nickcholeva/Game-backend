@@ -28,7 +28,7 @@ data = {
 }
 @app.get("/get")
 def get_codes():
-    return "VERSION-NEW\n" + "\n".join(data["codes"])
+    return " ".join(data["codes"])
 
 @app.route("/remove", methods=["POST"])
 def remove_item():
