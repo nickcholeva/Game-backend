@@ -3,7 +3,14 @@ from flask import Flask, request, jsonify
 app = Flask(__name__)
 
 data = {
-    "codes": ["A", "B", "C"]
+    "codes": [
+        "COIN1-AAA",
+        "COIN1-BBB",
+        "COIN2-CCC",
+        "COIN5-DDD",
+        "COIN10-EEE",
+        "COIN20-FFF"
+    ]
 }
 
 @app.route("/get", methods=["GET"])
